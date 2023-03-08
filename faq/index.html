@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html><html lang="en">
+<head>
+<meta property="og:title" content="Attorney Investigations Online" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://aai-online.github.io" />
+<meta property="og:description" content="Attorney Online but Ace Attorney Investigations: Miles Edgeworth" />
+<meta name="theme-color" content="#A81038">
+<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> <link href="https://fonts.googleapis.com/css?family=Oswald%7CRoboto+Condensed" rel="stylesheet"> <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<title>Attorney Investigations Online</title>
+<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> $(document).ready(function(){ onLoad(); $('a[href^="#"]:not([class*=acc])').on('click',function (e) { e.preventDefault();
+var target = this.hash; var $target = $(target); $('html, body').stop().animate({ 'scrollTop': $target.offset().top }, 900, 'swing', function () { window.location.hash = target; }); }); }); function onLoad(){ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) { //User is on mobile } else{ document.getElementById("navbarItems").innerHTML = document.getElementById("navbarItems").innerHTML + '<li class="nav-item"><a class="nav-link" href="http://web.aceattorneyonline.com/">Play Online</a></li>'; } }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113494687-1"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-113494687-1'); </script>
+</head>
+<body> <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top"> <div class="container"> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarResponsive"> <ul class="navbar-nav ml-auto" id="navbarItems">
+<li class="nav-item"> <a class="nav-link" href="https://aai-online.github.io/">Home</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://aai-online.github.io/download">Download</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://aai-online.github.io/faq">FAQ</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://aai-online.github.io/help">Help</a> </li>
+<li class="nav-item"> <a class="nav-link" href="https://github.com/AAI-Online/AIO">GitHub</a> </li>
+<li class="nav-item"> <a class="nav-link" target="_blank" href="https://discord.gg/Mzk7QZY">Discord</a> </li>
+</ul> </div> </div> </nav>
+<div class="container" id="tutorial"> <h1 class="mt-4 mb-3" style="text-align: center;">Attorney Investigations Online</h1> <hr class="gold"> <div class="row" style="border: 4px solid #F0F0F0;border-radius: 25px !important;background: #a80838;margin-bottom:20px;padding: 10px;">
+
+<div class="col-lg-12" style="text-align: left;">
+<hr><h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">F.A.Q.</h2>
+<p><b>Q: How can I customize the game's theme?</b><br />
+A: For now, the only thing you can customize is the chat box. You can open the settings menu to change it.<br /><br />
+<b>Q: When I try to connect to a server, I get "Game version mismatch"...?</b><br />
+A: The server is running a different AIO version than you are. Scroll up for an update if available, or check the server description if there is a download link for a custom client.<br /><br />
+<b>Q: I get a server on the list, but it says "Error connecting to master server".</b><br />
+A: The master server might be down at this moment. Try again later.<br /><br />
+<b>Q: What are these blue guys with yellow outlines? Why do I see them?</b><br />
+A: This is a player using custom content that you don't have. Try asking them for the character's files, or check the server description for a link.<br /><br />
+<b>Q: Where are the characters' idle animations stored?</b><br />
+A: It's in one file: "spin.gif". The first frame of that image is the player looking south, and the last, 8th frame of the image is the player looking southeast.<br /><br />
+<b>Q: Can I give a character a mugshot in the character selection screen?</b><br />
+A: This is optional since it automatically picks "spin.gif" for you, but in case if you want a mugshot for your character, it must be named "char_icon.png", and must have a size of 64x64 pixels.<br /><br />
+<b>Q: Is Mac or Linux supported?</b><br />
+A: Sorry, not yet. You'll have to use Wine for the time being.</p><br />
+</div>
+
+<div class="col-lg-12" style="text-align: center;">
+<hr><h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">TO-DO FOR UPCOMING VERSIONS</h2>
+<li><a href="https://github.com/headshot2017/AIO-tools">AIO tools</a>, a program for designing custom zones and character INIs</li>
+<li>"Close-up chat", specifically, this kind of chatting:</li>
+<img class="img-fluid" src="aai_closeup_chat.png"><br /><br /></p>
+</div>
+
+<div class="col-lg-12" style="text-align: left;">
+<hr><h2 style="font-family: 'Poiret One', cursive;text-transform: uppercase;margin-bottom:10px;text-align:center;">Known Issues</h2>
+<ul>
+<li>Collisions with walls are not completely correct; However, this got a small fix on version 0.4 of the game, so getting stuck will be less frequent.</li>
+<ul><li>Collisions will get a full re-work from the ground-up on v0.5, with a new system that does not rely on a PNG image for collision detection</li></ul>
+</ul>
+</div></div></div><footer class="py-5 bg-dark"> <div class="container"> <p class="m-0 text-center text-white">&copy; AIO <script> var today = new Date(); var year = today.getFullYear(); document.write(year); </script> </p> </div>
+</footer>
+<script src="vendor/jquery/jquery.min.js"></script> <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body></html>
